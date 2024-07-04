@@ -20,9 +20,12 @@ h4 {
 }
 
 .rz-panel-menu a.rz-navigation-item-link {
+   
     color: white;
     font-size: 11px;
 }
+
+
 
 table {
     margin-left: auto;
@@ -66,7 +69,7 @@ input {
 
 .rz-datatable-thead th > div:not(.rz-cell-filter),
 .rz-grid-table thead th > div:not(.rz-cell-filter) {
-    padding: 0.5px !important; /* Añade !important para asegurarte de que esta regla se aplique */
+    padding: 0.5px !important; 
 }
 
 
@@ -96,16 +99,70 @@ a, .btn-link {
     font-size: 12px;
 }
 
+
+
+
+.rz-panel-menu .rz-navigation-menu .rz-navigation-item-active,
+.rz-panel-menu .rz-navigation-menu .rz-navigation-item-wrapper-active {
+    background-color: #240b48; /* Mantener el fondo */
+    color: white; /* Mantener el color de texto */
+}
+
+
+
+.rz-panel-menu .rz-navigation-menu .rz-navigation-item,
+.rz-panel-menu .rz-navigation-menu .rz-navigation-item-wrapper {
+    background-color: #240b48; /* Mantener el fondo */
+    color: white; /* Mantener el color de texto */
+}
+
+
+.rz-panel-menu .rz-navigation-menu .rz-navigation-item-active,
+.rz-panel-menu .rz-navigation-menu .rz-navigation-item-wrapper-active {
+    /* Descomenta y ajusta el color de fondo si lo necesitas */
+    background-color: #240b48;
+    color: white; /* Cambia esto al color que desees */
+    font-weight: bold; /* Ajusta esto según tus necesidades */
+}
+
+
+.rz-panel-menu .rz-navigation-menu .rz-navigation-item .rz-navigation-item-link {
+    padding: var(--rz-panel-menu-item-2nd-level-padding);
+    padding-left: var(--rz-panel-menu-item-2nd-level-offset);
+    background-color: #371368;
+}
+
+
+/*Aca para los desplegables del menú.*/
 .rz-panel-menu a.rz-navigation-item-link {
     cursor: pointer;
-    background-color: #240A49;
+    background-color: #240b48;
     border-top: none;
     text-decoration: underline overline #FF3028;
 }
 
-.rz-navigation-item-link:not(.rz-state-disabled):before, .rz-menu-toggle:not(.rz-state-disabled):before {
-    background-color: #240A49;
+
+.rz-panel-menu .rz-navigation-menu .rz-navigation-item {
+    background-color: #220a46;
+
+   
 }
+
+.rz-navigation-item-link::before {
+    background-color: #240b48 !important;
+}
+
+.rz-navigation-item-link:hover{
+    background-color: #240b48; /* Mantén el mismo color de fondo */
+}
+.rz-navigation-item-link.rz-navigation-item-link-active::before {
+    background-color: #240b48; /* Mantén el mismo color de fondo */
+}
+
+.rz-navigation-item-link.active::before {
+    background-color: #240b48; /* Mantén el mismo color de fondo */
+}
+
 
 .rz-panel-menu .rz-navigation-item-wrapper {
     background-color: #240A49;
